@@ -1,0 +1,11 @@
+<div id="container">
+<% @gossips.each do |gossip|%>
+    <p><%gossip.title%></p>
+    <p><%gossip.user.first_name%></p>
+  #<a href="/static_pages/accueil/<%=gossip.id%>">
+  <%= gossip.title%>
+  </a>
+  
+
+<%end%>
+</div>
